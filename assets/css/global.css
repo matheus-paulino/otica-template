@@ -1,0 +1,20 @@
+.btn.btn-primary {
+  color: #fff;
+  border-color: #1791d5;
+  background-color: #1791d5;
+}
+
+.btn.btn-primary:hover {
+  border-color: #1791d5;
+  background-color: #1791d5;
+}
+
+hr.product-hr {
+  height: 2px;
+  background-color: #4fc6e1;
+  border: 0 !important;
+}
+
+.title-product {
+  color: #1791d5;
+}
