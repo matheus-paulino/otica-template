@@ -11,6 +11,10 @@
 
     <!-- Bootstrap CSS -->
     <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
       integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
@@ -32,49 +36,38 @@
     />
 
     <title>òtica</title>
-    <style>
-      html {
-        font-family: "Roboto", sans-serif;
-      }
-
-      hr {
-        background-color: #a0a0a0;
-      }
-
-      @media (min-width: 1200px) {
-        .container.info {
-          max-width: 1000px;
-        }
-      }
-    </style>
   </head>
 
   <body>
-    <div class="w-100 bg-primary text-center" style="height: 32px">
+    <div class="w-100 bg-primary" style="height: 32px">
       <div class="container">
-        <div class="row align-items-center justify-content-md-end">
-          <a
-            href="#"
-            class="text-white text-uppercase font-weight-bold mr-3 text-decoration-none"
-            >FALE CONOSCO</a
-          >
-          <a
-            href="#"
-            class="text-white text-uppercase font-weight-bold text-decoration-none"
-            >LOJA VIRTUAL</a
-          >
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-end align-items-center">
+            <a
+              href="#"
+              class="text-white text-uppercase font-weight-bold mr-3 text-decoration-none"
+              >FALE CONOSCO</a
+            >
+            <a
+              href="#"
+              class="text-white text-uppercase font-weight-bold text-decoration-none"
+              >LOJA VIRTUAL</a
+            >
+          </div>
         </div>
       </div>
     </div>
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-light"
+      class="navbar navbar-expand-lg navbar-light bg-transparent border-bottom"
       style="height: 120px"
     >
       <div class="container">
-        <img
-          width="150"
-          src="http://oticasfenix.com.br/wp-content/uploads/2017/06/LOGO-FENIX.png"
-        />
+        <a href="index.html" class="navbar-brand">
+          <img
+            width="150"
+            src="http://oticasfenix.com.br/wp-content/uploads/2017/06/LOGO-FENIX.png"
+          />
+        </a>
 
         <button
           class="navbar-toggler"
@@ -89,18 +82,27 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link text-uppercase" href="#"> Empresa </a>
+            <li class="nav-item active">
+              <a
+                class="nav-link text-uppercase font-weight-bold"
+                href="empresa.html"
+              >
+                Empresa
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#">marcas</a>
+              <a class="nav-link text-uppercase font-weight-bold" href="#"
+                >marcas</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#">serviços</a>
+              <a class="nav-link text-uppercase font-weight-bold" href="#"
+                >serviços</a
+              >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#"
+              <a class="nav-link text-uppercase font-weight-bold" href="#"
                 >laboratorio digital</a
               >
             </li>
@@ -111,21 +113,38 @@
     <div class="container mt-3">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-center p-3">
-            15 ANOS DE SERVIÇOS PRESTADOS COM QUALIDADE
-          </h2>
-          <p class="text-center p-2">
-            O Grupo FENIX está no mercado há 15 anos e nesse período
-            fortalecemos nossos propósitos com nossos clientes, superando os
-            mais diversos desafios e reinventando a forma de oferecer soluções
-            em ótica. A Empresa atua no setor de ótica com LOJAS MODERNAS e
-            CAMPANHAS CORPORATIVAS E COMUNÍTÁRIAS e com foco no ATENDIMENTO
-            HUMANIZADO, tratando cada cliente como único levando o que há de
-            mais moderno em óculos e acessórios
-          </p>
+          <div class="card">
+            <div class="card-body p-5">
+              <div class="row">
+                <div class="col-7">
+                  <h4 class="title-product text-center">
+                    15 ANOS DE SERVIÇOS PRESTADOS COM QUALIDADE
+                  </h4>
+                  <p class="text-center">
+                    O Grupo FENIX está no
+                    <span class="font-weight-bold">mercado há 15 anos</span> e
+                    nesse período fortalecemos nossos propósitos com nossos
+                    clientes, superando os mais diversos desafios e reinventando
+                    a forma de oferecer soluções em ótica. A Empresa atua no
+                    setor de ótica com LOJAS MODERNAS e CAMPANHAS CORPORATIVAS E
+                    COMUNÍTÁRIAS e com foco no ATENDIMENTO HUMANIZADO, tratando
+                    cada cliente como único levando o que há de mais moderno em
+                    óculos e acessórios
+                  </p>
+                </div>
+                <div class="col-5 text-center">
+                  <img
+                    src="https://embalagensnascimento.com.br/wp-content/uploads/2018/02/mais-de-15-anos-de-experiencia-no-mercado-thumbnail.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row mt-3">
         <div class="col-md-4">
           <div class="card" style="width: 18rem">
             <div class="card-body">
@@ -198,7 +217,7 @@
           </div>
 
           <div class="col-md-2">
-            <h5 class="text-primary text-uppercase">sobre</h5>
+            <h6 class="text-primary text-uppercase">sobre</h6>
             <p>
               <a href="#" class="text-decoration-none text-uppercase small"
                 >lorem ipsum</a
@@ -256,7 +275,7 @@
           </div>
 
           <div class="col-md-2">
-            <h5 class="text-primary text-uppercase">legal</h5>
+            <h6 class="text-primary text-uppercase">legal</h6>
             <p>
               <a href="#" class="text-decoration-none text-uppercase small"
                 >lorem ipsum</a
@@ -285,7 +304,7 @@
           </div>
 
           <div class="col-md-2">
-            <h5 class="text-primary text-uppercase">fale com a ótica</h5>
+            <h6 class="text-primary text-uppercase">fale com a ótica</h6>
             <p>
               <a href="#" class="text-decoration-none text-uppercase small"
                 >lorem ipsum</a
@@ -313,7 +332,7 @@
             </p>
           </div>
           <div class="col-md-2">
-            <h5 class="text-primary text-uppercase">redes sociais</h5>
+            <h6 class="text-primary text-uppercase">redes sociais</h6>
             <p>
               <a href="#" class="text-decoration-none text-uppercase">
                 <i class="fab fa-instagram fa-2x"></i
@@ -332,13 +351,17 @@
               src="http://oticasfenix.com.br/wp-content/uploads/2017/06/LOGO-FENIX.png"
             />
           </div>
-          <div class="col-md-8">
+          <div
+            class="col-md-8 d-flex justify-content-center align-items-center"
+          >
             <span class="small">
               Produtos sujeitos à disponibilidade de estoque. Imagens
               ilustrativas, podem não refletir a realidade dos produtos
             </span>
           </div>
-          <div class="col-md-3">
+          <div
+            class="col-md-3 d-flex justify-content-center align-items-center"
+          >
             <span class="small"> © - Todos os direitos reservados. </span>
           </div>
         </div>
